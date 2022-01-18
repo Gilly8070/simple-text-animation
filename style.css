@@ -1,0 +1,74 @@
+.hell {
+    /* background-color: black; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+background-color: #eee;
+overflow-x: hidden;
+/* position: relative; */
+    /* top: 25%; */
+}
+.cont {
+    /* display: flex; */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    align-self: center;
+    position: absolute;
+    top: 25%;
+    background-color: #eee;
+    /* width: 400px; */
+    height: 300px;
+    /* border-radius: 10px; */
+    font-size: 1.2rem;
+    /* line-break: loose;lin */
+line-height: 50px;
+    /* left: 25%; */
+}
+#heading1, #heading2 {
+    /* animation: typing 1.5s steps(15) infinite; */
+    position: relative;
+    color: rgba(9, 209, 209, 0.836);
+
+    /* animation: typing 1.5s steps(15) infinite; */
+
+}
+#heading1::after, #heading2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    /* border-left: 1px solid white; */
+    animation: typing 2s;
+    animation-iteration-count: infinite;
+/* animation-delay: 0.5s; */
+}
+
+@keyframes typing {
+    50% {
+        /* left: 10%; */
+
+    }
+    100% {
+        left: 120%;
+        /* margin: 0 -35px 0 35px; */
+    }
+    
+}
